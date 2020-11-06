@@ -1,0 +1,177 @@
+### Primary
+ - Desaturated Red: hsl(0, 36%, 70%)
+  - Soft Red: hsl(0, 93%, 68%)
+   ### Neutral
+   - Dark Grayish Red: hsl(0, 6%, 24%)
+   ### Gradients
+   - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) body {}
+
+.outer-box {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+/* <!-- ----------------------------------------------CLASSES --> */
+.header {
+  margin: 1.5rem 0;
+}
+
+.img {}
+
+.text {
+  text-align: center;
+  margin: 3rem 0 0 0;
+}
+
+/* <!-- ----------------------------------------------HEADER --> */
+.logo {
+  width: 30%;
+  height: auto;
+}
+
+/* <!-- ----------------------------------------------IMG --> */
+.img-mobile {
+  height: auto;
+}
+
+.img-desktop {
+  display: none;
+}
+
+/* <!-- ----------------------------------------------TEXT --> */
+.title {
+  width: 75%;
+  margin: auto;
+  letter-spacing: 7px;
+}
+
+.title-up {
+  color: hsl(0, 36%, 80%);
+  font-weight: 300;
+}
+
+.title-down {
+  font-weight: 700;
+}
+
+.text p {
+  color: hsl(0, 36%, 80%);
+  width: 75%;
+  margin: auto;
+}
+
+.email {
+  color: hsl(0, 36%, 80%);
+  background-color: hsl(0, 100%, 98%);
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 50px;
+  padding: 0 1.2rem 0 1.2rem;
+  width: 85%;
+  height: 3.5rem;
+  margin-top: 2rem;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 80%);
+}
+
+.submit {
+  width: 14%;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  left: 79%;
+  position: absolute;
+  margin-top: 2rem;
+  border-radius: 50px;
+  height: 3.5rem;
+  border: transparent;
+
+}
+
+.submit img {
+  position: absolute;
+  left: 48%;
+  top: 30%;
+}
+
+.submit:hover {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 90%), hsl(0, 74%, 100%));
+
+}
+.div-form {
+  position: relative;
+}
+.error {
+position: absolute;
+top: 40%;
+left: 65%;
+display: none;
+}
+
+.error-text {
+  color: hsl(0, 93%, 68%) !important;
+  font-size: 13px;
+  display: none;
+  margin: -0.6rem 0 0 2rem !important;
+}
+/* <!-- ----------------------------------------------FOR JS --> */
+@media only screen and (min-width: 769px) {
+
+  /* <!-- -------------------------------------------GENERAL --> */
+  .logo {
+    margin-left: 20%;
+  }
+
+  .inner-header {}
+
+  /* <!-- -------------------------------------------CLASSES --> */
+  .text {
+    margin: -40% 0 0 0;
+    text-align: left;
+  }
+
+  .title {
+    margin: 0 0 0 0;
+  }
+
+  .inner-text {
+    margin-left: 20%;
+    width: 50%;
+  }
+
+  /* <!-- -------------------------------------------IMG --> */
+  .img-desktop {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  /* <!-- -------------------------------------------TEXT --> */
+  .title {
+
+    letter-spacing: 12px;
+  }
+
+  .text p {
+margin: 0 0 0 0;
+width: 100%;
+  }
+
+  .email {
+background-color: transparent;
+width: 100%;
+  }
+
+  .submit {
+    width: 20%;
+    left: 80%;
+}
+.error {
+
+}
+  /* <!-- ----------------------------------------------FOOTER --> */
+}
